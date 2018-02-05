@@ -23,9 +23,9 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
 		 return new String[] { "/" };
 	}
 
-//	@Override
-//    protected Filter[] getServletFilters() {
-//        Filter countryFilter=new AddressFilter();
-//        return new Filter[] {countryFilter};
-//    }
+	@Override
+    protected Filter[] getServletFilters() {
+        Filter countryFilter=new AddressFilter();
+        return new Filter[] {countryFilter};
+    }
 }
